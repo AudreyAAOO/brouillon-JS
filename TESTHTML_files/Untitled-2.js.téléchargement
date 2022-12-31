@@ -1,0 +1,72 @@
+function exercice4(longueurGuirlande) {
+
+  let ligne = "";
+  for (let i = 0; i < longueurGuirlande; i = i + 1) {
+    ligne = ligne + "*";
+  }
+  console.log(ligne);// affiche ****** selon la taille de longueurGuirlande
+  // <===== FIN DE VOTRE CODE CI-DESSUS =====>
+}
+
+
+
+// Exercice 5
+function exercice5(longueurGuirlande) { // Ne supprimez/commentez pas cette ligne
+
+  // <===== VOTRE CODE ICI: Insérez/modifiez le code à partir d'ici =====>
+  // Utilisez la variable longueurGuirlande qui contient la longueur de la guirland à afficher
+
+  // Décommentez le code de Tom ci-dessous
+  //   let ligne = "";
+  //   let symbole = false;
+  //   for (let i = 0; i < longueurGuirlande; i = i + 1) {
+  //       symbole = !symbole ;
+  //       if (symbole) {
+  //           (ligne += "*");
+  //           } else {
+  //             (ligne += "o");
+  //           }
+  //     }
+  //   console.log(ligne);  // affiche *o*o*o*o*o*o* selon la taille de longueurGuirlande
+  // }
+  ///////// soluce officielle
+  let ligne = "";
+  let symbole = "*";
+  for (let i = 0; i < longueurGuirlande; i = i + 1) {
+    ligne = ligne + symbole;
+    if (symbole === "*") {
+      symbole = "o";
+    } else {
+      symbole = "*";
+    }
+  }
+  console.log(ligne);  // affiche *o*o*o*o*o*o* selon la taille de longueurGuirlande
+}
+
+// //test 
+// let adresseMagiciensDuCode = `MagiciensDuCode42 a1337 POINT-VIRGULE`;
+// function afficherTitre(titre) {
+//   console.log ("===[ " + titre + " ]===");
+// }
+
+// afficherTitre("Notre adresse");
+// console.log(adresseMagiciensDuCode);
+
+function afficherLigneLogo (esp1,esp2,esp3) {
+let etoile = "**";
+let esp1 = "eeeee";
+let esp2 = "rrrrrr";
+let esp3 = "ttttttt";
+console.log ("     " + etoile + "      " + esp1+ esp2 + esp3);
+return (esp1 + etoile) + (esp2 + etoile) + (esp3 + etoile);
+
+}
+
+afficherLigneLogo (2,4,6);
+afficherLigneLogo (esp1,esp2,esp3) ;
+    // <===== FIN DE VOTRE CODE CI-DESSUS =====
+    exercice4(60);
+    exercice5(70);
+
+    console.log("test");
+    console.log (afficherLigneLogo);
